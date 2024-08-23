@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Young";
+  src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("assets/fonts/outfit/static/Outfit-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("assets/fonts/outfit/static/Outfit-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1,
+h2 {
+  font-family: "Young", sans-serif;
+}
+
+h2,
+h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+p,
+li,
+td {
+  color: hsl(30, 10%, 34%);
+}
+span {
+  color: hsl(24, 5%, 18%);
+  font-weight: bold;
+}
+
+/* tr {
+  border-bottom: 1px solid black;
+} */
+
+.card {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 600px;
+  margin: 20px auto;
+}
+
+.omlette {
+  max-width: 600px;
+  border-radius: 8px;
+}
+.preparation {
+  background-color: hsl(30, 18%, 87%);
+  border-radius: 8px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
