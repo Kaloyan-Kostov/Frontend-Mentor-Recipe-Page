@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2;
+}
+
 @font-face {
   font-family: "Young";
   src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
@@ -25,17 +36,6 @@
   font-weight: 600;
 }
 
-body {
-  background-color: hsl(30, 54%, 90%);
-  font-family: "Outfit", sans-serif;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  line-height: 2;
-}
-
 h1 {
   color: hsl(24, 5%, 18%);
 }
@@ -43,6 +43,7 @@ h1 {
 h1,
 h2 {
   font-family: "Young", sans-serif;
+  font-size: 1.8rem;
 }
 
 h2 {
@@ -56,6 +57,7 @@ li::marker {
 
 h3 {
   margin-left: 0.4rem;
+  font-size: 1.3rem;
 }
 
 p,
@@ -65,10 +67,12 @@ td {
 }
 
 p {
+  font-size: 1.1rem;
   margin-bottom: 1.4rem;
 }
 
-ul li {
+ul li,
+ol li {
   padding-left: 1rem;
 }
 
@@ -81,7 +85,6 @@ th,
 td {
   padding: 0.6rem;
   text-align: left;
-  border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
 th {
@@ -92,6 +95,7 @@ li::marker {
   font-family: "Outfit";
   font-weight: bold;
 }
+
 .card {
   background-color: hsl(0, 0%, 100%);
   padding: 2.2rem;
@@ -104,6 +108,11 @@ li::marker {
   display: block;
   max-width: 100%;
   border-radius: 0.6rem;
+}
+
+.title {
+  margin-top: 1.2rem;
+  font-size: 2.4rem;
 }
 
 .preparation-section {
@@ -138,9 +147,13 @@ li::marker {
 }
 
 .table {
+  border-collapse: collapse;
   width: 100%;
 }
 
+.table-content {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
