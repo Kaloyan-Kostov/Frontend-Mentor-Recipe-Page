@@ -13,6 +13,8 @@ body {
   align-items: center;
   flex-direction: column;
   line-height: 2;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
 }
 
 @font-face {
@@ -67,8 +69,8 @@ td {
 }
 
 p {
-  font-size: 1.1rem;
-  margin-bottom: 1.4rem;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
 }
 
 ul li,
@@ -100,19 +102,24 @@ li::marker {
   background-color: hsl(0, 0%, 100%);
   padding: 2.2rem;
   margin: auto;
-  max-width: 48rem;
-  border-radius: 0.7rem;
+  max-width: 44rem;
+  border-radius: 1.4rem;
 }
 
 .omelette {
   display: block;
   max-width: 100%;
-  border-radius: 0.6rem;
+  border-radius: 0.9rem;
 }
 
 .title {
   margin-top: 1.2rem;
+  margin-bottom: 0.2rem;
   font-size: 2.4rem;
+}
+
+.description {
+  line-height: 1.6;
 }
 
 .preparation-section {
@@ -154,11 +161,84 @@ li::marker {
 .table-content {
   border-bottom: 1px solid hsl(30, 18%, 87%);
 }
+
 .attribution {
-  font-size: 11px;
+  font-size: 15px;
   text-align: center;
+  padding: 0.8rem;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  body {
+    margin: 0;
+  }
+
+  .card,
+  .title,
+  .description,
+  .preparation-section,
+  .preparation-list,
+  .ingredients-section,
+  .ingredients-list,
+  .instructions-section,
+  .instructions-list,
+  .nutrition-section,
+  .table,
+  .table-content {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+
+  .card {
+    border-radius: 0px;
+    padding: 0;
+  }
+
+  .omelette {
+    border-radius: 0;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.92rem;
+  }
+
+  ul.ingredients-list {
+    padding-right: 0;
+  }
+
+  ol.instructions-list {
+    padding-right: 0.5rem;
+    line-height: 1.4;
+  }
+
+  li {
+    margin-bottom: 0.3rem;
+  }
+
+  p {
+    font-size: 0.99rem;
+    line-height: 1.4;
+  }
+
+  td,
+  th {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+  }
+
+  .nutrition-section {
+    margin-bottom: 2rem;
+  }
 }
